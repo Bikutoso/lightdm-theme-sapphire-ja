@@ -1,16 +1,8 @@
-# Sapphire Theme
+# Sapphire Theme - Japanese
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
 This is a theme for LightDM Webkit2 ([`lightdm-webkit2-greeter`](https://github.com/Antergos/web-greeter))
-
-### [DEMO](https://sujaykumarh.github.io/lightdm-theme-sapphire/)
-
-To test the Login in DEMO select user and enter the same username as password. 
-
-eg: username: **superman** password: **superman**
-
-**ONLY FOR DEMO**
 
 <br>
 
@@ -33,16 +25,10 @@ Alert
 - Simple design
 
 ##### TODO
-
-1. ~~Fix font issue~~ Done: -> [5e9518d](https://github.com/Sujaykumarh/lightdm-theme-sapphire/commit/5e9518dc33f9aed1b5e9ef275d335394e49b15a5)
-2. Add Responsive 
-3. ~~Add to [AUR](https://aur.archlinux.org)~~ Done: -> [`lightdm-webkit2-theme-sapphire`](https://aur.archlinux.org/packages/lightdm-webkit2-theme-sapphire/)
-4. Add AutoLogin
-5. ~~Add Support to use icon from path~~ Done: -> [fa2b85f](https://github.com/Sujaykumarh/lightdm-theme-sapphire/commit/fa2b85f2ecf07a998c3ac75b552dc48a90ffcc20)
-6. Add Comments
+1. Clear password field on failure
 
 ##### Tested On
-Arch Linux 1920 x 1080 display
+Void Linux 1920 x 1080 display
 
 ## License
 
