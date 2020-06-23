@@ -35,8 +35,8 @@ function ThemeManager() {
 }
 
 ThemeManager.prototype = {
-    _days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-    _months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
+    _days: ['日曜日', '月曜日', '火曜日', '水曜日', '木曜日', '金曜日', '土曜日'],
+    _months: ['１月', '２月', '３月', '４月', '５月', '６月', '７月', '８月', '９月', '１０月', '１１月', '１２月'],
     init: function () {
         if (window.debugMode) {
             //init Mock Data
@@ -113,7 +113,7 @@ ThemeManager.prototype = {
         this.updateTime();
         setInterval(function () {
             manager.updateTime();
-        }, 1000 * 30);
+        }, 1000);
     },
     initPassowrdInput: function () {
         var manager = this;
@@ -148,28 +148,28 @@ ThemeManager.prototype = {
         // ShutDown Button
         if(!window.lightdm.can_shutdown) $('#control-shutdown').hide();
         $('#control-shutdown').click(function () {
-            manager.createAlert("Shutdown", "Do you Want to shutdown System?", function () {
+            manager.createAlert("シャットダウン", "シャットダウンをしますか", function () {
                 lightdm.shutdown();
             });
         });
         // Hibernate Button
         if(!window.lightdm.can_hibernate) $('#control-hibernate').hide();
         $('#control-hibernate').click(function () {
-            manager.createAlert("Hibernate", "Do you Want to Hibernate System?", function () {
+            manager.createAlert("ハイバネート", "ハイバネートをしますか", function () {
                 lightdm.hibernate();
             });
         });
         // Suspend Button
         if(!window.lightdm.can_suspend) $('#control-suspend').hide();
         $('#control-suspend').click(function () {
-            manager.createAlert("Suspend", "Do you Want to Suspend System?", function () {
+            manager.createAlert("サスペンド", "サスペンドをしますか", function () {
                 lightdm.suspend();
             });
         });
         // Restart Button
         if(!window.lightdm.can_restart) $('#control-restart').hide();
         $('#control-restart').click(function () {
-            manager.createAlert("Restart", "Do you Want to Restart System?", function () {
+            manager.createAlert("再起動", "再起動をしますか", function () {
                 lightdm.restart();
             });
         });
@@ -230,9 +230,10 @@ ThemeManager.prototype = {
         //console.log("TICK TOK!");
         var _date = new Date();
         $('#clock-date-day').html(this._days[_date.getDay()]);
-        $('#clock-date-date').html(_date.getDate() + ' ' + this._months[_date.getMonth()]);
+        $('#clock-date-date').html(_date.getFullYear() + '年' + (_date.getMonth() + 1) + '月' + _date.getDate() + '日');
         $('#clock-time-hr').html(_date.getHours());
-        $('#clock-time-min').html((_date.getMinutes() < 10 ? '0' : '') + _date.getMinutes());
+        $('#clock-time-min').html((_date.getMinutes() < 10 ? ' ' : '') + _date.getMinutes());
+        $('#clock-time-sec').html((_date.getSeconds() < 10 ? ' ' : '') + _date.getSeconds());
     },
     addSessions: function () {
         for (var i = 0; i < lightdm.sessions.length; i++) {
