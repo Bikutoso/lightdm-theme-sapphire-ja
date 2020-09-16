@@ -181,10 +181,10 @@ ThemeManager.prototype = {
             start(lightdm.sessions[_currentUserSessionId].key);
         }, function (message) {
             //ERROR
+            //Clear password input
+            $('.input-password input').val('');
             $('.input-password').addClass('password-invalid').delay(200).queue(function (next) {
                 $(this).removeClass('password-invalid');
-                //Clear password input
-                setTimeout(() => { $('.input-password input').val(''); }, 300);
                 next();
             });
         });

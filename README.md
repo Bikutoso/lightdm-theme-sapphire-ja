@@ -25,7 +25,7 @@ Alert
 - Simple design
 
 ##### TODO
-1. Clear password field on failure
+1. ~~Clear password field on failure~~
 
 ##### Tested On
 Void Linux 1920 x 1080 display

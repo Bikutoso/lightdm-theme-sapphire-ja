@@ -262,9 +262,9 @@ body, head{
 }
 
 .password-invalid{
-    animation: shake 0.4s;
+    animation: shake 0.5s;
     animation-iteration-count: 1;
-    background: rgba(220, 20, 60, 0.25) !important;
+    background: rgba(220, 20, 60, 0.50) !important;
 }
 
 /** DEFAULT SNACK BAR DARK **/
