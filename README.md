@@ -13,14 +13,7 @@ Follow [wiki](https://github.com/Sujaykumarh/lightdm-theme-sapphire/wiki)
 ### Screenshots
 
 Main View
-![Screenshot1](https://raw.githubusercontent.com/Sujaykumarh/lightdm-theme-sapphire/master/screenshot/Screenshot_1.png)
-Session Selection
-![Screenshot2](https://raw.githubusercontent.com/Sujaykumarh/lightdm-theme-sapphire/master/screenshot/Screenshot_2.png)
-User Selection
-![Screenshot3](https://raw.githubusercontent.com/Sujaykumarh/lightdm-theme-sapphire/master/screenshot/Screenshot_3.png)
-Alert
-![Screenshot4](https://raw.githubusercontent.com/Sujaykumarh/lightdm-theme-sapphire/master/screenshot/Screenshot_4.png)
-
+![Screenshot1](https://raw.githubusercontent.com/Bikutoso/lightdm-theme-sapphire-ja/master/screenshot/Screenshot_1.png)
 #### Features
 - Simple design
 
