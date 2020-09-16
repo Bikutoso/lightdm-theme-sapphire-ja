@@ -183,6 +183,8 @@ ThemeManager.prototype = {
             //ERROR
             $('.input-password').addClass('password-invalid').delay(200).queue(function (next) {
                 $(this).removeClass('password-invalid');
+                //Clear password input
+                setTimeout(() => { $('.input-password input').val(''); }, 300);
                 next();
             });
         });
